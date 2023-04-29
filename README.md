@@ -35,5 +35,14 @@ links https://iterkoczeos.xlx.pl
 tar -xvpf <system_tarball>
 rm <system_tarball>
 grub-install --boot-directory=/mnt/boot /dev/XXXX
-grub-mkconfig -o /mnt/boot/grub/grub.cfg
 ```
+
+Now, you have to make the GRUB config file. To do that, put this in `/boot/grub/grub.cfg`
+```
+menuentry "IterkoczeOS" {
+  root=hd0,msdos1
+  linux /boot/vmlinuz-6.1.11-IterkoczeOS root=/dev/sda1
+}
+```
+
+Now you can reboot the system and boot into IterkoczeOS.
