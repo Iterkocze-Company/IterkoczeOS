@@ -35,6 +35,7 @@ links https://iterkoczeos.xlx.pl
 tar -xvpf <system_tarball>
 rm <system_tarball>
 grub-install --boot-directory=/mnt/boot /dev/XXXX
+vim etc/fstab (edit it to your needs)
 ```
 
 Now, you have to make the GRUB config file. To do that, put this in `/boot/grub/grub.cfg`
