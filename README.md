@@ -49,7 +49,7 @@ menuentry "IterkoczeOS" {
 
 Network configuration has to be done before you boot into IterkoczeOS
 ```
-Not done yet
+ip link show
 ```
 
 Now you can reboot the system and boot into IterkoczeOS.
