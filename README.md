@@ -15,6 +15,7 @@ Next, boot up/prepare your environment and make sure you have:
 - About 6 GB of free drive space minimum
 - About 1 GB of free RAM
 - Working keyboard is also a nice thing to have for QOL (you don't need a mouse)
+- VirtualBox with it's graphics driver set to `VBoxVGA`
 
 Prepare your root partition and if desired, a swap partition using (all commands below are run as root):
 ```
