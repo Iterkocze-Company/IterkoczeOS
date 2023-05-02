@@ -55,3 +55,7 @@ Change the network interface to the correct one shown by ip link show
 ```
 
 Now you can reboot the system and boot into IterkoczeOS.
+
+Boot up, select "IterkoczeOS" in the GRUB boot menu, log in as `user` with the default password of `123` and execute `startx`.
+
+Also do not forget to read `README` in your user's home directory
