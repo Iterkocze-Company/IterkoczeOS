@@ -15,7 +15,7 @@ Next, boot up/prepare your environment and make sure you have:
 - About 6 GB of free drive space minimum
 - About 1 GB of free RAM
 - Working keyboard is also a nice thing to have for QOL (you don't need a mouse)
-- VirtualBox with it's graphics driver set to `VBoxVGA`
+- VirtualBox with it's graphics driver set to `VBoxVGA` and network adapter set to bridge
 
 Prepare your root partition and if desired, a swap partition using (all commands below are run as root):
 ```
@@ -50,6 +50,8 @@ menuentry "IterkoczeOS" {
 Network configuration has to be done before you boot into IterkoczeOS
 ```
 ip link show
+sudo vim /etc/sysconfig/ifconfig.enp6s0
+Change the network interface to the correct one shown by ip link show
 ```
 
 Now you can reboot the system and boot into IterkoczeOS.
