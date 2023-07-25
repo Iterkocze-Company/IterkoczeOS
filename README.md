@@ -28,6 +28,8 @@ Make sure that the downloded raw build is named `iterkoczeos.tar.xz`<br>
 Run the installation script `./os-install` and follow the instructions provided <br>
 
 ### Manual installation 
+For a manual installation, you need to have a working Linux environment set up. Whether it be a live CD or yor own installation <br>
+In this example I'm using Arch live CD<br>
 Boot up/prepare your environment and make sure you have:
 - tar and xz
 - fdisk
@@ -60,18 +62,23 @@ grub-install --boot-directory=/mnt/boot /dev/XXXX
 vim etc/fstab (edit it to your needs)
 ```
 
-Now, you have to make the GRUB config file. To do that, put this in `/boot/grub/grub.cfg`
+Bind /dev using `mount -v --bind /dev /mnt/dev` <br>
+And chroot `chroot /mnt` <br>
+Configure the bootloader using `grub-mkconfig -o /boot/grub/grub.cfg` <br>
+
+<s>Now, you have to make the GRUB config file. To do that, put this in `/boot/grub/grub.cfg`
 ```
 menuentry "IterkoczeOS" {
-  root=hd0,msdos1
-  linux /boot/vmlinuz-6.1.11-IterkoczeOS root=/dev/sda1
+  root=hdX,msdos1
+  linux /boot/vmlinuz-6.1.11-IterkoczeOS root=/dev/XXXY (XXX being your device, and Y being the partition number)
 }
 ```
+</s>
 
 Network configuration has to be done before you boot into IterkoczeOS
 ```
 ip link show
-sudo vim /etc/sysconfig/ifconfig.enp6s0
+vim /etc/sysconfig/ifconfig.enp6s0
 Change the network interface to the correct one shown by ip link show
 ```
 
