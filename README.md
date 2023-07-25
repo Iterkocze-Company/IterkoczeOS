@@ -2,22 +2,43 @@
 Official Iterkocze Operating system
 
 ## Installation
-Head to: https://drive.google.com/drive/folders/1jJ1n8cgSfiPi_KQ2M1Nb8i3q0ViWX7Ed?usp=sharing <br>
-for system tarballs.
+When it comes to installation, you have two options. <br>
+Either using the official installation medium and using the automated script within it (recommended for quick VM installs) <br>
 
-In order to install IterkoczeOS, you will need a functioning Linux environment. 
-Live CD will work too. If you are going with the Live CD idea, it's best to download plain Arch Linux as it's small.
+<b>or</b> <br>
 
-Next, boot up/prepare your environment and make sure you have:
+Downloading the raw system build and installing it manually (recommended for installing on a physical computer)
+
+### Note about installing IterkoczeOS in a VM
+IterkoczeOS is currently only supported in VirtualBox with specific settings. Make sure your VM with IterkoczeOS has the following settings before proceeding with installation <br>
+Settings -> System -> Motherboard -> Pointing Device -> USB Tablet <br>
+Settings -> Display -> Screen -> Graphics Controller -> VBoxVGA <br>
+
+### Installation using the official installation medium
+Download `iterkoczeos.iso` from https://drive.google.com/drive/folders/1jJ1n8cgSfiPi_KQ2M1Nb8i3q0ViWX7Ed?usp=sharing <br>
+It's a netinstaller for IterkoczeOS
+
+Boot up the ISO and login using
+```
+username: root
+password: 123
+```
+Download the raw build of IterkoczeOS using `links iterkoczeos.xlx.pl` <br>
+Make sure that the downloded raw build is named `iterkoczeos.tar.xz`<br>
+Run the installation script `./os-install` and follow the instructions provided <br>
+
+### Manual installation 
+Boot up/prepare your environment and make sure you have:
 - tar and xz
 - fdisk
 - GRUB
 - About 6 GB of free drive space minimum
 - About 1 GB of free RAM
 - Working keyboard is also a nice thing to have for QOL (you don't need a mouse)
-- VirtualBox with it's graphics driver set to `VBoxVGA` and network adapter set to `Bridged Adapter`
+- Proper VM settings, if using one
 
-Prepare your root partition and if desired, a swap partition using (all commands below are run as root):
+All commands are ran as root <br>
+Prepare your root partition and if desired, a swap partition using: <br>
 ```
 fdisk /dev/XXX (replace XXX with your device identifier)
 n
