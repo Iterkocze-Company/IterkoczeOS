@@ -1,6 +1,7 @@
 # IterkoczeOS
-https://iterkoczeos.xlx.pl <br>
 Official Iterkocze Operating system
+# https://iterkoczeos.xlx.pl <br>
+
 
 ## Installation
 When it comes to installation, you have two options. <br>
