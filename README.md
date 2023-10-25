@@ -14,7 +14,6 @@ Downloading the raw system build and installing it manually (recommended for ins
 ### Note about installing IterkoczeOS in a VM
 IterkoczeOS is currently only supported in VirtualBox with specific settings. Make sure your VM with IterkoczeOS has the following settings before proceeding with installation <br>
 Settings -> System -> Motherboard -> Pointing Device -> USB Tablet <br>
-Settings -> Display -> Screen -> Graphics Controller -> VBoxVGA <br>
 
 ### Installation using the official installation medium
 Download `iterkoczeos.iso` from https://drive.google.com/drive/folders/1jJ1n8cgSfiPi_KQ2M1Nb8i3q0ViWX7Ed?usp=sharing <br>
