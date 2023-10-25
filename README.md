@@ -16,7 +16,7 @@ IterkoczeOS is currently only supported in VirtualBox with specific settings. Ma
 Settings -> System -> Motherboard -> Pointing Device -> USB Tablet <br>
 
 ### Installation using the official installation medium
-Download `iterkoczeos.iso` from https://drive.google.com/drive/folders/1jJ1n8cgSfiPi_KQ2M1Nb8i3q0ViWX7Ed?usp=sharing <br>
+Download `iterkoczeos.iso` from https://onedrive.live.com/download?resid=BB120FC63B0CB79F%2110996&authkey=!AAe8Y7fM8UlIdHQ <br>
 It's a netinstaller for IterkoczeOS
 
 Boot up the ISO and login using
