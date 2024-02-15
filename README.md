@@ -4,6 +4,7 @@ Official Iterkocze Operating system
 - Made from scratch
 - SysVinit
 - Ready to use out of the box
+- Simple
 
 
 ### https://iterkoczeos.xlx.pl <br>
