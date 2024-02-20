@@ -9,6 +9,8 @@ Official Iterkocze Operating system
 
 ### https://iterkoczeos.xlx.pl <br>
 ### Wiki: https://github.com/Iterkocze-Company/IterkoczeOS/wiki
+### Source: https://github.com/Iterkocze-Company/IterkoczeOS-Source
+### Package repo: https://github.com/Iterkocze-Company/IterkoczeOS-Packages-Main
 
 ![thumbnail](ios1.png)
 ![thumbnail](ios2.png)
